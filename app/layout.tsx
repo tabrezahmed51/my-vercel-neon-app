@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { inter } from "./fonts";
+import { universalSans, geistMono } from "./fonts";
 
 export const metadata: Metadata = {
-  title: "Vercel + Neon",
-  description: "Use Neon with Vercel",
+  title: "xAI - Understand The Universe",
+  description: "xAI is the AI research company behind Grok, building intelligence that aims to understand the universe.",
 };
 
 export default function RootLayout({
@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} dark`}>
+    <html lang="en" className={`${universalSans.variable} ${geistMono.variable} dark`}>
       <body>{children}</body>
     </html>
   );
